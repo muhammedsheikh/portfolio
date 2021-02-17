@@ -1,0 +1,908 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* html{
+    background: linear-gradient(107.56deg, #01EEFD 0%, #00969F 100%); 
+    height: 100%;
+    background-image: url(/images/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1920px;
+
+     background-size: cover;
+} */
+
+.main{
+    background: linear-gradient(107.56deg, #01EEFD 0%, #00969F 100%); 
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.ellipse1{
+    position: absolute;
+    left: 50%;
+    top: 2%;
+    /* animation: myfirst 5s linear 2s infinite alternate; */
+    overflow: hidden;
+    transform: translatey(0px);
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
+    
+} 
+
+@-webkit-keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
+      transform: translatey(-50px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+      transform: translatey(0px);
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
+      transform: translatey(-50px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+      transform: translatey(0px);
+    }
+  }
+
+
+ .ellipse2{
+    position: absolute;
+    left: 79%;
+    top: 25%;
+    overflow: hidden;
+    transform: translatey(0px);
+  -webkit-animation: float 5s ease-in-out infinite;
+          animation: float 5s ease-in-out infinite;
+}
+
+.ellipse3{
+    position: absolute;
+    left: 30%;
+    top: 38%;
+    overflow: hidden;
+    transform: translatey(0px);
+  -webkit-animation: float 3s ease-in-out infinite;
+          animation: float 3s ease-in-out infinite;
+}
+
+.ellipse4{
+    position: absolute;
+    left: 3%;
+    top: 3%;
+    overflow: hidden;
+    transform: translatey(0px);
+  -webkit-animation: float 4s ease-in-out infinite;
+          animation: float 4s ease-in-out infinite;
+}
+
+.ellipse5{
+    position: absolute;
+    right: 2%;
+    top: 60%;
+    overflow: hidden;
+    transform: translatey(0px);
+  -webkit-animation: float 4s ease-in-out infinite;
+          animation: float 4s ease-in-out infinite; 
+}
+
+.ellipse6{
+    position: absolute;
+    right: 40%;
+    top: 60%;
+    overflow: hidden;
+    transform: translatey(0px);
+  -webkit-animation: float 2s ease-in-out infinite;
+          animation: float 2s ease-in-out infinite;
+}
+
+.ellipse7{
+    position: absolute;
+    right: 80%;
+    top: 90%;
+    overflow: hidden;
+    transform: translatey(0px);
+  -webkit-animation: float 3s ease-in-out infinite;
+          animation: float 3s ease-in-out infinite;
+}
+
+.ellipse8{
+    position: absolute;
+    right: 80%;
+    top: 45%;
+    overflow: hidden;
+    transform: translatey(0px);
+  -webkit-animation: float 4s ease-in-out infinite;
+          animation: float 4s ease-in-out infinite;
+}
+
+/* Animation */
+
+
+
+
+
+.navbar{
+   
+    padding:0 10%;
+    margin-top: 1%;
+    height: 91px;
+  
+ 
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(105.66deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.18) 100%);
+    backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+    opacity: 0.85;
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-brand{
+    font-family: 'Poppins', sans-serif;;
+font-style: medium;
+font-weight: 500;
+font-size: 36px;
+color: #000000;
+
+opacity: 0.5;
+margin-left: 1.5%;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5%;
+
+    font-family: 'Poppins', sans-serif;;
+font-style: medium;
+font-weight: 500;
+font-size: 24px;
+color: #000000;
+
+opacity: 0.5;
+}
+
+.nav-list{
+    list-style: none;
+   padding-left: 40px;
+   transition: all 0.2s ease-in;
+}
+
+.nav-list:hover{
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero{
+    padding:0 10%;
+    margin-top: 72px; 
+    height: 100%;
+}
+
+
+.hero-container{
+    background: linear-gradient(105.66deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.18) 100%);
+backdrop-filter: blur(5px);
+/* Note: backdrop-filter has minimal browser support */
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 26px;
+padding: 5%;
+opacity: 0.85;
+
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-img{
+    width: 42%;
+    margin-bottom: 35px;
+    margin-left: 9px;
+    padding-left: 15px;
+}
+
+
+/* Skills-section */
+
+.skills-container{
+    padding:0 10%;
+    margin-top: 72px;
+}
+
+.skills{
+    width: 100%;
+    height: 159px;
+    
+
+    background: linear-gradient(105.66deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.18) 100%);
+    backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 26px;
+    opacity: 0.85;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skill-letters{
+    font-size: 72px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    opacity: 0.20;
+    
+}
+
+.skill-image1{
+    width: 84px;
+    height: 86px;
+
+}
+
+
+.skill-image2{
+    width: 69px;
+    height: 87px;
+    
+}
+
+.skill-image3{
+    width: 147px;
+    height: 85px;
+}
+
+.skill-image4{
+    width: 111px;
+    height: 85px;
+}
+
+.skill-image5{
+    width: 141px;
+    height: 85px;
+}
+
+.career-container{
+    padding: 0 10%;
+    margin-top: 20px;
+}
+
+.career{
+    width: 100%;
+    height: 733px;
+    background: linear-gradient(105.66deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.18) 100%);
+    opacity: 0.85;
+    backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 26px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+.career-heading{
+    position: absolute;
+    left: 45%;
+  margin-left: -45px;
+  top: 50%;
+  margin-top: -50px;
+
+  font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 64px;
+line-height: 96px;
+color: rgba(0, 0, 0, 0.2);
+}
+
+.career-contents{
+    width: 100%;
+}
+
+.career-components1{
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    /* align-content: center; */
+    
+}
+
+.career-components2{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    
+}
+
+.career-crafts{
+    padding:35px 0;
+    text-align: center;
+    width: 505px;
+    height: 203px;
+    background:white;
+    border-radius: 20px;
+    
+}
+.career-crafts h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+}
+.career-crafts h2{
+    line-height: 40px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+}
+.career-crafts p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;  
+}
+
+.career-quba{
+    padding:35px 0;
+    text-align: center;
+    width: 522px;
+    height: 203px;
+    background: white;
+    border-radius: 20px;
+}
+
+.career-quba h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+}
+.career-quba h2{
+    line-height: 40px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+}
+.career-quba p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 45px; 
+}
+
+.career-hidayath{
+    padding:35px 0;
+    text-align: center;
+    width: 505px;
+height: 209px;
+background: white;
+    border-radius: 20px;
+}
+
+.career-hidayath h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+}
+.career-hidayath h2{
+    line-height: 40px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+}
+.career-hidayath p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 45px;
+}
+
+.career-gallagher{
+    padding:35px 0;
+    text-align: center;
+    width: 505px;
+height: 209px;
+background: white;
+    border-radius: 20px;
+}
+
+.career-gallagher h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+}
+.career-gallagher h2{
+    line-height: 40px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+}
+.career-gallagher p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 45px;
+}
+
+/* Footer section */
+
+.footer-container{
+    padding: 0 10%;
+    margin: 40px 0;
+}
+
+.footer{
+    width: 100%;
+    height: 72px;
+
+    background: linear-gradient(105.66deg, rgba(255, 255, 255, 0.48) 80.51%, rgba(255, 255, 255, 0.18) 180.51%);
+    backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 26px;
+    opacity: 0.85;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-link{
+    opacity: 0.6;
+    transition:all 0.2s ease-in;
+}
+
+.footer-link:hover{
+    opacity: 1;
+    transition:all 0.2s ease-in;
+    
+}
+
+
+@media only screen and (max-width:768px){
+
+    .body{
+        width: 247px;
+    }
+
+    .ellipse1{
+        width:247px;
+    }
+
+    .ellipse2{
+        width: 247px;
+        left: 20px;
+    }
+
+    .ellipse3{
+        width: 247px;
+    }
+
+    .ellipse4{
+        width: 247px;
+    }
+
+
+    .nav-brand{
+    font-size: 24px;
+    color: #000000;
+    }
+
+    .nav-link{
+    padding: 0 1.5%;        
+    font-style: medium;
+    font-weight: 500;
+    font-size: 14px;    
+     }
+
+     .hero-container{
+       
+        
+        display: flex;
+        flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center; 
+         
+    }
+
+    .hero-svg {
+        width: 100%;
+    }
+    
+    .hero-img{
+        width: 100%;
+       }
+
+
+    .skills-container{
+        width: 100%;
+    }
+   .skills{
+       padding:10px;
+       width: 100%;
+   }    
+    
+    .skill-letters{
+       display: none;
+        
+    }
+    
+    .skill-image1{
+        padding: 10px;
+    }
+    
+    
+    .skill-image2{
+        padding: 10px;
+
+    }
+    
+    .skill-image3{
+        padding: 10px;
+
+    }
+    
+    .skill-image4{
+        padding: 10px;
+
+    }
+    
+    .skill-image5{
+        padding: 10px;
+
+    }
+
+    .career{
+        width: 100%;
+    }
+
+    .career-heading{
+        position: absolute;
+        left: 40%;
+      margin-left: -45px;
+      top: 50%;
+      margin-top: -50px;
+    }
+
+    .career-contents{
+        width: 100%;
+        
+    }
+
+    
+
+    .career-components1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .career-components2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .career-crafts h1{
+        font-size:18px;
+        line-height: 2;
+    }
+
+    .career-crafts h2{
+        font-size:18px;
+        line-height: 2;
+    }
+
+    .career-crafts p{
+        font-size:18px;
+        line-height: 2;
+    }
+
+    .career-quba h1{
+        font-size:18px;
+        line-height: 2; 
+    }
+
+    .career-quba h1{
+        font-size:18px;
+        line-height: 2; 
+    }
+
+    .career-quba h2{
+        font-size:18px; 
+        line-height: 2;
+    }
+
+    .career-quba p{
+        font-size:18px; 
+        line-height: 2;
+    }
+
+    .career-hidayath h1{
+        font-size:18px; 
+        line-height: 2;
+    }
+
+    .career-hidayath h2{
+        font-size:18px; 
+        line-height: 2;
+    }
+
+    .career-hidayath p{
+        font-size:18px; 
+        line-height: 2;
+    }
+
+    .career-gallagher h1{
+        font-size:18px;
+        line-height: 2;
+    }
+
+    .career-gallagher h2{
+        font-size:18px;
+        line-height: 2;
+    }
+
+    .career-gallagher p{
+        font-size:18px;
+        line-height: 2;
+    }
+
+    .career-crafts{
+        width: 400px;
+        height: 140px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .career-gallagher{
+        width: 400px;
+        height: 140px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .career-hidayath{
+        width: 400px;
+        height: 140px;
+        padding: 15px;
+    }
+    
+    .career-quba{
+        width: 400px;
+        height: 140px;
+        padding: 15px;
+        
+    }
+
+}
+
+@media only screen and (max-width:360px){
+    .ellipse1{
+        width:120px;
+    }
+    .ellipse2{
+        width:120px;
+    }
+    .ellipse3{
+        width:120px;
+    }
+    .ellipse4{
+        width:120px;
+    }
+    .ellipse5{
+        width:120px;
+    }
+    .ellipse6{
+        width:120px;
+    }
+    .ellipse7{
+        width:120px;
+    }
+    .ellipse8{
+        width:120px;
+    }
+
+    .navbar{
+        height: 100%;
+    }
+
+    .nav-link{
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-brand{
+        font-size: 16px;
+    }
+
+    .hero{
+       margin: 10px 0;
+    }
+
+    .hero-img{
+        display: none;
+    }
+
+    .hero-svg{
+        height: 100%;
+    }
+
+    .skills-container{
+        margin-top: 40px;
+    }
+
+    .skills{
+        height: 100%;
+    }
+
+    .skill-image1{
+        width: 45px;
+        height: 48px;
+    }
+        
+    .skill-image2{
+        width: 45px;
+        height: 48px;
+    }
+    
+    .skill-image3{
+        width: 45px;
+        height: 48px;
+    }
+    
+    .skill-image4{
+        width: 45px;
+        height: 48px;
+    }
+    
+    .skill-image5{
+        width: 45px;
+        height: 48px;
+    }
+
+    .career-crafts h1{
+        line-height: 1;
+        width: 100%;
+    }
+
+    .career-crafts h2{
+        line-height: 1;
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .career-crafts p{
+        line-height: 1;
+        width: 100%;
+    }
+
+    .career-quba h1{
+        line-height: 1;
+        width: 100%;
+    }
+
+    .career-quba h1{
+        line-height: 1;
+        width: 100%;
+    }
+
+    .career-quba h2{
+        line-height: 1;
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .career-quba p{
+        line-height: 1;
+        width: 100%;
+    }
+
+    .career-hidayath h1{
+        line-height: 1;
+        width: 100%;
+    }
+
+    .career-hidayath h2{
+        line-height: 1;
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .career-hidayath p{
+        line-height: 1;
+        width: 100%;
+    }
+
+    .career-gallagher h1{
+        line-height: 1;
+        width: 100%;
+    }
+
+    .career-gallagher h2{
+        line-height: 1;
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .career-gallagher p{
+        line-height: 1;
+        width: 100%;
+    }
+
+    .career-crafts{
+        width: 200px;
+        padding: 20px;
+    }
+
+    .career-gallagher{
+        width: 200px;
+        padding: 20px;
+    }
+
+    .career-hidayath{
+        width: 200px;
+        padding: 20px;
+    }
+    
+    .career-quba{
+        width: 200px;
+        padding: 20px;
+        
+    }
+}
